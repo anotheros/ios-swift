@@ -52,8 +52,10 @@ class MoDaoLoginController: UIViewController {
     
     //注册账号
     @IBAction func registerEmial(_ sender: Any) {
+
+        self.navigationController?.pushViewController(LakhRegisterController(), animated: true)
         
-        
+
     }
     
     

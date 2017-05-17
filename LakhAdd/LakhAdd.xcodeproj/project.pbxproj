@@ -37,6 +37,8 @@
 		26ABAC231ECC36FE0023DF97 /* PDKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC221ECC36FE0023DF97 /* PDKeyChain.m */; };
 		26ABAC301ECC47BC0023DF97 /* LakhForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC2E1ECC47BC0023DF97 /* LakhForgetPasswordController.swift */; };
 		26ABAC311ECC47BC0023DF97 /* LakhForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */; };
+		26ABAC3A1ECC501B0023DF97 /* LakhRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC381ECC501B0023DF97 /* LakhRegisterController.swift */; };
+		26ABAC3B1ECC501B0023DF97 /* LakhRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ABAC391ECC501B0023DF97 /* LakhRegisterController.xib */; };
 		75189A8D3218F8A7A4CD65FF /* Pods_LakhAdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +102,8 @@
 		26ABAC241ECC37A40023DF97 /* LakhAdd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LakhAdd.entitlements; sourceTree = "<group>"; };
 		26ABAC2E1ECC47BC0023DF97 /* LakhForgetPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakhForgetPasswordController.swift; sourceTree = "<group>"; };
 		26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LakhForgetPasswordController.xib; sourceTree = "<group>"; };
+		26ABAC381ECC501B0023DF97 /* LakhRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakhRegisterController.swift; sourceTree = "<group>"; };
+		26ABAC391ECC501B0023DF97 /* LakhRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LakhRegisterController.xib; sourceTree = "<group>"; };
 		9570D66D579A2C37FE3F4D95 /* Pods-LakhAdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.debug.xcconfig"; sourceTree = "<group>"; };
 		E52B575564E9CE1AE59C3B0C /* Pods-LakhAdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +207,8 @@
 				26ABABDB1ECC22890023DF97 /* MoDaoLoginController.xib */,
 				26ABAC2E1ECC47BC0023DF97 /* LakhForgetPasswordController.swift */,
 				26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */,
+				26ABAC381ECC501B0023DF97 /* LakhRegisterController.swift */,
+				26ABAC391ECC501B0023DF97 /* LakhRegisterController.xib */,
 			);
 			path = "Login(登录)";
 			sourceTree = "<group>";
@@ -491,6 +497,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26ABAC3B1ECC501B0023DF97 /* LakhRegisterController.xib in Resources */,
 				26ABABAE1ECC20990023DF97 /* LaunchScreen.storyboard in Resources */,
 				26ABABAB1ECC20990023DF97 /* Assets.xcassets in Resources */,
 				26ABAC311ECC47BC0023DF97 /* LakhForgetPasswordController.xib in Resources */,
@@ -584,6 +591,7 @@
 				26ABAC1A1ECC229E0023DF97 /* MoDaoBaseViewController.swift in Sources */,
 				26ABAC021ECC22890023DF97 /* swiftTotalPch.swift in Sources */,
 				26ABAC171ECC229E0023DF97 /* MoDaoTabbarController.swift in Sources */,
+				26ABAC3A1ECC501B0023DF97 /* LakhRegisterController.swift in Sources */,
 				26ABABFD1ECC22890023DF97 /* MoDaoMeController.swift in Sources */,
 				26ABAC091ECC22890023DF97 /* HYTitleView.swift in Sources */,
 				26ABAC1D1ECC229E0023DF97 /* MoDaoHomePageController.swift in Sources */,
