@@ -23,6 +23,7 @@ class MoDaoLoginController: UIViewController {
         super.viewDidLoad()
 
  
+        self.title = "登录"
     
     }
 
@@ -44,6 +45,8 @@ class MoDaoLoginController: UIViewController {
     //找回密码
     @IBAction func findPassword(_ sender: Any) {
         
+        self.navigationController?.pushViewController(LakhForgetPasswordController(), animated: true)
+        
         
     }
     
@@ -51,6 +54,19 @@ class MoDaoLoginController: UIViewController {
     @IBAction func registerEmial(_ sender: Any) {
         
         
+    }
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
     }
 
 }

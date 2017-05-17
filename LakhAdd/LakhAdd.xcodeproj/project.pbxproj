@@ -35,6 +35,8 @@
 		26ABAC1C1ECC229E0023DF97 /* MoDaoHomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC151ECC229E0023DF97 /* MoDaoHomeListViewController.swift */; };
 		26ABAC1D1ECC229E0023DF97 /* MoDaoHomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC161ECC229E0023DF97 /* MoDaoHomePageController.swift */; };
 		26ABAC231ECC36FE0023DF97 /* PDKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC221ECC36FE0023DF97 /* PDKeyChain.m */; };
+		26ABAC301ECC47BC0023DF97 /* LakhForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC2E1ECC47BC0023DF97 /* LakhForgetPasswordController.swift */; };
+		26ABAC311ECC47BC0023DF97 /* LakhForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */; };
 		75189A8D3218F8A7A4CD65FF /* Pods_LakhAdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		26ABAC211ECC36FE0023DF97 /* PDKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeyChain.h; sourceTree = "<group>"; };
 		26ABAC221ECC36FE0023DF97 /* PDKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeyChain.m; sourceTree = "<group>"; };
 		26ABAC241ECC37A40023DF97 /* LakhAdd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LakhAdd.entitlements; sourceTree = "<group>"; };
+		26ABAC2E1ECC47BC0023DF97 /* LakhForgetPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakhForgetPasswordController.swift; sourceTree = "<group>"; };
+		26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LakhForgetPasswordController.xib; sourceTree = "<group>"; };
 		9570D66D579A2C37FE3F4D95 /* Pods-LakhAdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.debug.xcconfig"; sourceTree = "<group>"; };
 		E52B575564E9CE1AE59C3B0C /* Pods-LakhAdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +201,8 @@
 				26ABAC201ECC36FE0023DF97 /* loginUserTool */,
 				26ABABDA1ECC22890023DF97 /* MoDaoLoginController.swift */,
 				26ABABDB1ECC22890023DF97 /* MoDaoLoginController.xib */,
+				26ABAC2E1ECC47BC0023DF97 /* LakhForgetPasswordController.swift */,
+				26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */,
 			);
 			path = "Login(登录)";
 			sourceTree = "<group>";
@@ -431,6 +437,7 @@
 		26ABAB981ECC20990023DF97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Lakh;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = lakh;
@@ -486,6 +493,7 @@
 			files = (
 				26ABABAE1ECC20990023DF97 /* LaunchScreen.storyboard in Resources */,
 				26ABABAB1ECC20990023DF97 /* Assets.xcassets in Resources */,
+				26ABAC311ECC47BC0023DF97 /* LakhForgetPasswordController.xib in Resources */,
 				26ABABFC1ECC22890023DF97 /* MoDaoLoginController.xib in Resources */,
 				26ABABA91ECC20990023DF97 /* Main.storyboard in Resources */,
 			);
@@ -562,6 +570,7 @@
 			files = (
 				26ABAC191ECC229E0023DF97 /* MoDaoFindController.swift in Sources */,
 				26ABAC031ECC22890023DF97 /* UIColor-Extension.swift in Sources */,
+				26ABAC301ECC47BC0023DF97 /* LakhForgetPasswordController.swift in Sources */,
 				26ABAC061ECC22890023DF97 /* HYContentView.swift in Sources */,
 				26ABAC081ECC22890023DF97 /* HYPageView.swift in Sources */,
 				26ABABFE1ECC22890023DF97 /* UIButton+Extension.m in Sources */,

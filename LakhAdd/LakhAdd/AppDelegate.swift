@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
         
    //登录界面
-         window?.rootViewController = MoDaoLoginController()
+         window?.rootViewController = setRootControllerWithRootVc(rootViewController: MoDaoLoginController())
         
       
    //主界面
@@ -49,6 +49,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         
         
+    }
+    
+    
+    func setRootControllerWithRootVc(rootViewController : UIViewController) -> (UIViewController){
+    
+    
+        let lakhNav  = MoDaoNavgationViewController(rootViewController : rootViewController)
+        
+       
+        return lakhNav
+        
+    
+    
     }
 
 
