@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26ABABA41ECC20990023DF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABA31ECC20990023DF97 /* AppDelegate.swift */; };
+		26ABABA61ECC20990023DF97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABA51ECC20990023DF97 /* ViewController.swift */; };
+		26ABABA91ECC20990023DF97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26ABABA71ECC20990023DF97 /* Main.storyboard */; };
+		26ABABAB1ECC20990023DF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26ABABAA1ECC20990023DF97 /* Assets.xcassets */; };
+		26ABABAE1ECC20990023DF97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26ABABAC1ECC20990023DF97 /* LaunchScreen.storyboard */; };
+		26ABABB91ECC20990023DF97 /* LakhAddTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABB81ECC20990023DF97 /* LakhAddTests.swift */; };
+		26ABABC41ECC20990023DF97 /* LakhAddUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABC31ECC20990023DF97 /* LakhAddUITests.swift */; };
+		26ABABFB1ECC22890023DF97 /* MoDaoLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABDA1ECC22890023DF97 /* MoDaoLoginController.swift */; };
+		26ABABFC1ECC22890023DF97 /* MoDaoLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ABABDB1ECC22890023DF97 /* MoDaoLoginController.xib */; };
+		26ABABFD1ECC22890023DF97 /* MoDaoMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABDD1ECC22890023DF97 /* MoDaoMeController.swift */; };
+		26ABABFE1ECC22890023DF97 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABE31ECC22890023DF97 /* UIButton+Extension.m */; };
+		26ABABFF1ECC22890023DF97 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABE51ECC22890023DF97 /* Bundle+Extension.swift */; };
+		26ABAC001ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABE71ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m */; };
+		26ABAC011ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABE91ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m */; };
+		26ABAC021ECC22890023DF97 /* swiftTotalPch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABEA1ECC22890023DF97 /* swiftTotalPch.swift */; };
+		26ABAC031ECC22890023DF97 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABEB1ECC22890023DF97 /* UIColor-Extension.swift */; };
+		26ABAC051ECC22890023DF97 /* MoDaoHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABF01ECC22890023DF97 /* MoDaoHttpTool.swift */; };
+		26ABAC061ECC22890023DF97 /* HYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABF51ECC22890023DF97 /* HYContentView.swift */; };
+		26ABAC071ECC22890023DF97 /* HYPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABF61ECC22890023DF97 /* HYPageStyle.swift */; };
+		26ABAC081ECC22890023DF97 /* HYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABF71ECC22890023DF97 /* HYPageView.swift */; };
+		26ABAC091ECC22890023DF97 /* HYTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABF81ECC22890023DF97 /* HYTitleView.swift */; };
+		26ABAC0A1ECC22890023DF97 /* MoDaoWeiKanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABFA1ECC22890023DF97 /* MoDaoWeiKanController.swift */; };
+		26ABAC171ECC229E0023DF97 /* MoDaoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC0C1ECC229E0023DF97 /* MoDaoTabbarController.swift */; };
+		26ABAC181ECC229E0023DF97 /* MoDaoFaJiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC0E1ECC229E0023DF97 /* MoDaoFaJiController.swift */; };
+		26ABAC191ECC229E0023DF97 /* MoDaoFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC101ECC229E0023DF97 /* MoDaoFindController.swift */; };
+		26ABAC1A1ECC229E0023DF97 /* MoDaoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC121ECC229E0023DF97 /* MoDaoBaseViewController.swift */; };
+		26ABAC1B1ECC229E0023DF97 /* MoDaoNavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC131ECC229E0023DF97 /* MoDaoNavgationViewController.swift */; };
+		26ABAC1C1ECC229E0023DF97 /* MoDaoHomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC151ECC229E0023DF97 /* MoDaoHomeListViewController.swift */; };
+		26ABAC1D1ECC229E0023DF97 /* MoDaoHomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC161ECC229E0023DF97 /* MoDaoHomePageController.swift */; };
+		75189A8D3218F8A7A4CD65FF /* Pods_LakhAdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26ABABB51ECC20990023DF97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26ABAB981ECC20990023DF97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26ABAB9F1ECC20990023DF97;
+			remoteInfo = LakhAdd;
+		};
+		26ABABC01ECC20990023DF97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26ABAB981ECC20990023DF97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26ABAB9F1ECC20990023DF97;
+			remoteInfo = LakhAdd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LakhAdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26ABABA01ECC20990023DF97 /* LakhAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LakhAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26ABABA31ECC20990023DF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26ABABA51ECC20990023DF97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26ABABA81ECC20990023DF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26ABABAA1ECC20990023DF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26ABABAD1ECC20990023DF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26ABABAF1ECC20990023DF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26ABABB41ECC20990023DF97 /* LakhAddTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LakhAddTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26ABABB81ECC20990023DF97 /* LakhAddTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakhAddTests.swift; sourceTree = "<group>"; };
+		26ABABBA1ECC20990023DF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26ABABBF1ECC20990023DF97 /* LakhAddUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LakhAddUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26ABABC31ECC20990023DF97 /* LakhAddUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakhAddUITests.swift; sourceTree = "<group>"; };
+		26ABABC51ECC20990023DF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26ABABDA1ECC22890023DF97 /* MoDaoLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoLoginController.swift; sourceTree = "<group>"; };
+		26ABABDB1ECC22890023DF97 /* MoDaoLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoDaoLoginController.xib; sourceTree = "<group>"; };
+		26ABABDD1ECC22890023DF97 /* MoDaoMeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoMeController.swift; sourceTree = "<group>"; };
+		26ABABE11ECC22890023DF97 /* MoDaoExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoDaoExtension.h; sourceTree = "<group>"; };
+		26ABABE21ECC22890023DF97 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		26ABABE31ECC22890023DF97 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		26ABABE51ECC22890023DF97 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		26ABABE61ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYIMOsingleSelectCellOneCell.h; sourceTree = "<group>"; };
+		26ABABE71ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYIMOsingleSelectCellOneCell.m; sourceTree = "<group>"; };
+		26ABABE81ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYIMOWBsingleSelectOneCell.h; sourceTree = "<group>"; };
+		26ABABE91ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYIMOWBsingleSelectOneCell.m; sourceTree = "<group>"; };
+		26ABABEA1ECC22890023DF97 /* swiftTotalPch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftTotalPch.swift; sourceTree = "<group>"; };
+		26ABABEB1ECC22890023DF97 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		26ABABEF1ECC22890023DF97 /* MoDao-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MoDao-Bridging-Header.h"; sourceTree = "<group>"; };
+		26ABABF01ECC22890023DF97 /* MoDaoHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoHttpTool.swift; sourceTree = "<group>"; };
+		26ABABF51ECC22890023DF97 /* HYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYContentView.swift; sourceTree = "<group>"; };
+		26ABABF61ECC22890023DF97 /* HYPageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageStyle.swift; sourceTree = "<group>"; };
+		26ABABF71ECC22890023DF97 /* HYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageView.swift; sourceTree = "<group>"; };
+		26ABABF81ECC22890023DF97 /* HYTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYTitleView.swift; sourceTree = "<group>"; };
+		26ABABFA1ECC22890023DF97 /* MoDaoWeiKanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoWeiKanController.swift; sourceTree = "<group>"; };
+		26ABAC0C1ECC229E0023DF97 /* MoDaoTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoTabbarController.swift; sourceTree = "<group>"; };
+		26ABAC0E1ECC229E0023DF97 /* MoDaoFaJiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoFaJiController.swift; sourceTree = "<group>"; };
+		26ABAC101ECC229E0023DF97 /* MoDaoFindController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoFindController.swift; sourceTree = "<group>"; };
+		26ABAC121ECC229E0023DF97 /* MoDaoBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoBaseViewController.swift; sourceTree = "<group>"; };
+		26ABAC131ECC229E0023DF97 /* MoDaoNavgationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoNavgationViewController.swift; sourceTree = "<group>"; };
+		26ABAC151ECC229E0023DF97 /* MoDaoHomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoHomeListViewController.swift; sourceTree = "<group>"; };
+		26ABAC161ECC229E0023DF97 /* MoDaoHomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoHomePageController.swift; sourceTree = "<group>"; };
+		9570D66D579A2C37FE3F4D95 /* Pods-LakhAdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.debug.xcconfig"; sourceTree = "<group>"; };
+		E52B575564E9CE1AE59C3B0C /* Pods-LakhAdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26ABAB9D1ECC20990023DF97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75189A8D3218F8A7A4CD65FF /* Pods_LakhAdd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABABB11ECC20990023DF97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABABBC1ECC20990023DF97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26ABAB971ECC20990023DF97 = {
+			isa = PBXGroup;
+			children = (
+				26ABABA21ECC20990023DF97 /* LakhAdd */,
+				26ABABB71ECC20990023DF97 /* LakhAddTests */,
+				26ABABC21ECC20990023DF97 /* LakhAddUITests */,
+				26ABABA11ECC20990023DF97 /* Products */,
+				EB0146746589E82797E9F4AD /* Pods */,
+				D2AEFAC03FAF7CCD8DBD0859 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		26ABABA11ECC20990023DF97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABA01ECC20990023DF97 /* LakhAdd.app */,
+				26ABABB41ECC20990023DF97 /* LakhAddTests.xctest */,
+				26ABABBF1ECC20990023DF97 /* LakhAddUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26ABABA21ECC20990023DF97 /* LakhAdd */ = {
+			isa = PBXGroup;
+			children = (
+				26ABAC0B1ECC229E0023DF97 /* Controllers */,
+				26ABAC0D1ECC229E0023DF97 /* FaJI(发籍) */,
+				26ABAC0F1ECC229E0023DF97 /* FaXian(发现) */,
+				26ABAC111ECC229E0023DF97 /* Home */,
+				26ABAC141ECC229E0023DF97 /* HomePage(首页) */,
+				26ABABD91ECC22890023DF97 /* Login(登录) */,
+				26ABABDC1ECC22890023DF97 /* Me(我) */,
+				26ABABDE1ECC22890023DF97 /* model */,
+				26ABABDF1ECC22890023DF97 /* Tool */,
+				26ABABF41ECC22890023DF97 /* Views */,
+				26ABABF91ECC22890023DF97 /* WeiKan(微刊) */,
+				26ABABA31ECC20990023DF97 /* AppDelegate.swift */,
+				26ABABA51ECC20990023DF97 /* ViewController.swift */,
+				26ABABA71ECC20990023DF97 /* Main.storyboard */,
+				26ABABAA1ECC20990023DF97 /* Assets.xcassets */,
+				26ABABAC1ECC20990023DF97 /* LaunchScreen.storyboard */,
+				26ABABAF1ECC20990023DF97 /* Info.plist */,
+			);
+			path = LakhAdd;
+			sourceTree = "<group>";
+		};
+		26ABABB71ECC20990023DF97 /* LakhAddTests */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABB81ECC20990023DF97 /* LakhAddTests.swift */,
+				26ABABBA1ECC20990023DF97 /* Info.plist */,
+			);
+			path = LakhAddTests;
+			sourceTree = "<group>";
+		};
+		26ABABC21ECC20990023DF97 /* LakhAddUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABC31ECC20990023DF97 /* LakhAddUITests.swift */,
+				26ABABC51ECC20990023DF97 /* Info.plist */,
+			);
+			path = LakhAddUITests;
+			sourceTree = "<group>";
+		};
+		26ABABD91ECC22890023DF97 /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABDA1ECC22890023DF97 /* MoDaoLoginController.swift */,
+				26ABABDB1ECC22890023DF97 /* MoDaoLoginController.xib */,
+			);
+			path = "Login(登录)";
+			sourceTree = "<group>";
+		};
+		26ABABDC1ECC22890023DF97 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABDD1ECC22890023DF97 /* MoDaoMeController.swift */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		26ABABDE1ECC22890023DF97 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		26ABABDF1ECC22890023DF97 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABE01ECC22890023DF97 /* Additions */,
+				26ABABE41ECC22890023DF97 /* Extension */,
+				26ABABEC1ECC22890023DF97 /* http */,
+				26ABABF11ECC22890023DF97 /* uicolor */,
+				26ABABF21ECC22890023DF97 /* uiimage */,
+				26ABABF31ECC22890023DF97 /* uiview */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		26ABABE01ECC22890023DF97 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABE11ECC22890023DF97 /* MoDaoExtension.h */,
+				26ABABE21ECC22890023DF97 /* UIButton+Extension.h */,
+				26ABABE31ECC22890023DF97 /* UIButton+Extension.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		26ABABE41ECC22890023DF97 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABE51ECC22890023DF97 /* Bundle+Extension.swift */,
+				26ABABE61ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.h */,
+				26ABABE71ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m */,
+				26ABABE81ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.h */,
+				26ABABE91ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m */,
+				26ABABEA1ECC22890023DF97 /* swiftTotalPch.swift */,
+				26ABABEB1ECC22890023DF97 /* UIColor-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		26ABABEC1ECC22890023DF97 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABEF1ECC22890023DF97 /* MoDao-Bridging-Header.h */,
+				26ABABF01ECC22890023DF97 /* MoDaoHttpTool.swift */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		26ABABF11ECC22890023DF97 /* uicolor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = uicolor;
+			sourceTree = "<group>";
+		};
+		26ABABF21ECC22890023DF97 /* uiimage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = uiimage;
+			sourceTree = "<group>";
+		};
+		26ABABF31ECC22890023DF97 /* uiview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = uiview;
+			sourceTree = "<group>";
+		};
+		26ABABF41ECC22890023DF97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABF51ECC22890023DF97 /* HYContentView.swift */,
+				26ABABF61ECC22890023DF97 /* HYPageStyle.swift */,
+				26ABABF71ECC22890023DF97 /* HYPageView.swift */,
+				26ABABF81ECC22890023DF97 /* HYTitleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26ABABF91ECC22890023DF97 /* WeiKan(微刊) */ = {
+			isa = PBXGroup;
+			children = (
+				26ABABFA1ECC22890023DF97 /* MoDaoWeiKanController.swift */,
+			);
+			path = "WeiKan(微刊)";
+			sourceTree = "<group>";
+		};
+		26ABAC0B1ECC229E0023DF97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26ABAC0C1ECC229E0023DF97 /* MoDaoTabbarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26ABAC0D1ECC229E0023DF97 /* FaJI(发籍) */ = {
+			isa = PBXGroup;
+			children = (
+				26ABAC0E1ECC229E0023DF97 /* MoDaoFaJiController.swift */,
+			);
+			path = "FaJI(发籍)";
+			sourceTree = "<group>";
+		};
+		26ABAC0F1ECC229E0023DF97 /* FaXian(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				26ABAC101ECC229E0023DF97 /* MoDaoFindController.swift */,
+			);
+			path = "FaXian(发现)";
+			sourceTree = "<group>";
+		};
+		26ABAC111ECC229E0023DF97 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				26ABAC121ECC229E0023DF97 /* MoDaoBaseViewController.swift */,
+				26ABAC131ECC229E0023DF97 /* MoDaoNavgationViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		26ABAC141ECC229E0023DF97 /* HomePage(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				26ABAC151ECC229E0023DF97 /* MoDaoHomeListViewController.swift */,
+				26ABAC161ECC229E0023DF97 /* MoDaoHomePageController.swift */,
+			);
+			path = "HomePage(首页)";
+			sourceTree = "<group>";
+		};
+		D2AEFAC03FAF7CCD8DBD0859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB0146746589E82797E9F4AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9570D66D579A2C37FE3F4D95 /* Pods-LakhAdd.debug.xcconfig */,
+				E52B575564E9CE1AE59C3B0C /* Pods-LakhAdd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26ABAB9F1ECC20990023DF97 /* LakhAdd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26ABABC81ECC20990023DF97 /* Build configuration list for PBXNativeTarget "LakhAdd" */;
+			buildPhases = (
+				B340564B53E5D3BAC6FD9CB4 /* [CP] Check Pods Manifest.lock */,
+				26ABAB9C1ECC20990023DF97 /* Sources */,
+				26ABAB9D1ECC20990023DF97 /* Frameworks */,
+				26ABAB9E1ECC20990023DF97 /* Resources */,
+				1028BA6582F6DEADBE922AE8 /* [CP] Embed Pods Frameworks */,
+				89BBA03C19D9D33B55A5BF09 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LakhAdd;
+			productName = LakhAdd;
+			productReference = 26ABABA01ECC20990023DF97 /* LakhAdd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26ABABB31ECC20990023DF97 /* LakhAddTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26ABABCB1ECC20990023DF97 /* Build configuration list for PBXNativeTarget "LakhAddTests" */;
+			buildPhases = (
+				26ABABB01ECC20990023DF97 /* Sources */,
+				26ABABB11ECC20990023DF97 /* Frameworks */,
+				26ABABB21ECC20990023DF97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26ABABB61ECC20990023DF97 /* PBXTargetDependency */,
+			);
+			name = LakhAddTests;
+			productName = LakhAddTests;
+			productReference = 26ABABB41ECC20990023DF97 /* LakhAddTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26ABABBE1ECC20990023DF97 /* LakhAddUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26ABABCE1ECC20990023DF97 /* Build configuration list for PBXNativeTarget "LakhAddUITests" */;
+			buildPhases = (
+				26ABABBB1ECC20990023DF97 /* Sources */,
+				26ABABBC1ECC20990023DF97 /* Frameworks */,
+				26ABABBD1ECC20990023DF97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26ABABC11ECC20990023DF97 /* PBXTargetDependency */,
+			);
+			name = LakhAddUITests;
+			productName = LakhAddUITests;
+			productReference = 26ABABBF1ECC20990023DF97 /* LakhAddUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26ABAB981ECC20990023DF97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = lakh;
+				TargetAttributes = {
+					26ABAB9F1ECC20990023DF97 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BPTZ8B7HX9;
+						ProvisioningStyle = Automatic;
+					};
+					26ABABB31ECC20990023DF97 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BPTZ8B7HX9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26ABAB9F1ECC20990023DF97;
+					};
+					26ABABBE1ECC20990023DF97 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = BPTZ8B7HX9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26ABAB9F1ECC20990023DF97;
+					};
+				};
+			};
+			buildConfigurationList = 26ABAB9B1ECC20990023DF97 /* Build configuration list for PBXProject "LakhAdd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26ABAB971ECC20990023DF97;
+			productRefGroup = 26ABABA11ECC20990023DF97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26ABAB9F1ECC20990023DF97 /* LakhAdd */,
+				26ABABB31ECC20990023DF97 /* LakhAddTests */,
+				26ABABBE1ECC20990023DF97 /* LakhAddUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26ABAB9E1ECC20990023DF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ABABAE1ECC20990023DF97 /* LaunchScreen.storyboard in Resources */,
+				26ABABAB1ECC20990023DF97 /* Assets.xcassets in Resources */,
+				26ABABFC1ECC22890023DF97 /* MoDaoLoginController.xib in Resources */,
+				26ABABA91ECC20990023DF97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABABB21ECC20990023DF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABABBD1ECC20990023DF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1028BA6582F6DEADBE922AE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89BBA03C19D9D33B55A5BF09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B340564B53E5D3BAC6FD9CB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26ABAB9C1ECC20990023DF97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ABAC191ECC229E0023DF97 /* MoDaoFindController.swift in Sources */,
+				26ABAC001ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m in Sources */,
+				26ABAC031ECC22890023DF97 /* UIColor-Extension.swift in Sources */,
+				26ABAC061ECC22890023DF97 /* HYContentView.swift in Sources */,
+				26ABAC081ECC22890023DF97 /* HYPageView.swift in Sources */,
+				26ABABFE1ECC22890023DF97 /* UIButton+Extension.m in Sources */,
+				26ABAC1C1ECC229E0023DF97 /* MoDaoHomeListViewController.swift in Sources */,
+				26ABAC181ECC229E0023DF97 /* MoDaoFaJiController.swift in Sources */,
+				26ABAC0A1ECC22890023DF97 /* MoDaoWeiKanController.swift in Sources */,
+				26ABAC1B1ECC229E0023DF97 /* MoDaoNavgationViewController.swift in Sources */,
+				26ABAC051ECC22890023DF97 /* MoDaoHttpTool.swift in Sources */,
+				26ABABFF1ECC22890023DF97 /* Bundle+Extension.swift in Sources */,
+				26ABAC1A1ECC229E0023DF97 /* MoDaoBaseViewController.swift in Sources */,
+				26ABAC021ECC22890023DF97 /* swiftTotalPch.swift in Sources */,
+				26ABAC171ECC229E0023DF97 /* MoDaoTabbarController.swift in Sources */,
+				26ABABFD1ECC22890023DF97 /* MoDaoMeController.swift in Sources */,
+				26ABAC091ECC22890023DF97 /* HYTitleView.swift in Sources */,
+				26ABAC1D1ECC229E0023DF97 /* MoDaoHomePageController.swift in Sources */,
+				26ABAC071ECC22890023DF97 /* HYPageStyle.swift in Sources */,
+				26ABABFB1ECC22890023DF97 /* MoDaoLoginController.swift in Sources */,
+				26ABABA61ECC20990023DF97 /* ViewController.swift in Sources */,
+				26ABAC011ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m in Sources */,
+				26ABABA41ECC20990023DF97 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABABB01ECC20990023DF97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ABABB91ECC20990023DF97 /* LakhAddTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ABABBB1ECC20990023DF97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ABABC41ECC20990023DF97 /* LakhAddUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26ABABB61ECC20990023DF97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26ABAB9F1ECC20990023DF97 /* LakhAdd */;
+			targetProxy = 26ABABB51ECC20990023DF97 /* PBXContainerItemProxy */;
+		};
+		26ABABC11ECC20990023DF97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26ABAB9F1ECC20990023DF97 /* LakhAdd */;
+			targetProxy = 26ABABC01ECC20990023DF97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26ABABA71ECC20990023DF97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26ABABA81ECC20990023DF97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26ABABAC1ECC20990023DF97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26ABABAD1ECC20990023DF97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26ABABC61ECC20990023DF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26ABABC71ECC20990023DF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26ABABC91ECC20990023DF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9570D66D579A2C37FE3F4D95 /* Pods-LakhAdd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BPTZ8B7HX9;
+				INFOPLIST_FILE = LakhAdd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lakhAdd.LakhAdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		26ABABCA1ECC20990023DF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52B575564E9CE1AE59C3B0C /* Pods-LakhAdd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BPTZ8B7HX9;
+				INFOPLIST_FILE = LakhAdd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lakhAdd.LakhAdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		26ABABCC1ECC20990023DF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BPTZ8B7HX9;
+				INFOPLIST_FILE = LakhAddTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lakhAdd.LakhAddTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LakhAdd.app/LakhAdd";
+			};
+			name = Debug;
+		};
+		26ABABCD1ECC20990023DF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BPTZ8B7HX9;
+				INFOPLIST_FILE = LakhAddTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lakhAdd.LakhAddTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LakhAdd.app/LakhAdd";
+			};
+			name = Release;
+		};
+		26ABABCF1ECC20990023DF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BPTZ8B7HX9;
+				INFOPLIST_FILE = LakhAddUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lakhAdd.LakhAddUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LakhAdd;
+			};
+			name = Debug;
+		};
+		26ABABD01ECC20990023DF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BPTZ8B7HX9;
+				INFOPLIST_FILE = LakhAddUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lakhAdd.LakhAddUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LakhAdd;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26ABAB9B1ECC20990023DF97 /* Build configuration list for PBXProject "LakhAdd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26ABABC61ECC20990023DF97 /* Debug */,
+				26ABABC71ECC20990023DF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26ABABC81ECC20990023DF97 /* Build configuration list for PBXNativeTarget "LakhAdd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26ABABC91ECC20990023DF97 /* Debug */,
+				26ABABCA1ECC20990023DF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26ABABCB1ECC20990023DF97 /* Build configuration list for PBXNativeTarget "LakhAddTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26ABABCC1ECC20990023DF97 /* Debug */,
+				26ABABCD1ECC20990023DF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26ABABCE1ECC20990023DF97 /* Build configuration list for PBXNativeTarget "LakhAddUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26ABABCF1ECC20990023DF97 /* Debug */,
+				26ABABD01ECC20990023DF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26ABAB981ECC20990023DF97 /* Project object */;
+}
