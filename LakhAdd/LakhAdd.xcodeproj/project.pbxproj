@@ -19,8 +19,6 @@
 		26ABABFD1ECC22890023DF97 /* MoDaoMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABDD1ECC22890023DF97 /* MoDaoMeController.swift */; };
 		26ABABFE1ECC22890023DF97 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABE31ECC22890023DF97 /* UIButton+Extension.m */; };
 		26ABABFF1ECC22890023DF97 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABE51ECC22890023DF97 /* Bundle+Extension.swift */; };
-		26ABAC001ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABE71ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m */; };
-		26ABAC011ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABE91ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m */; };
 		26ABAC021ECC22890023DF97 /* swiftTotalPch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABEA1ECC22890023DF97 /* swiftTotalPch.swift */; };
 		26ABAC031ECC22890023DF97 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABEB1ECC22890023DF97 /* UIColor-Extension.swift */; };
 		26ABAC051ECC22890023DF97 /* MoDaoHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABF01ECC22890023DF97 /* MoDaoHttpTool.swift */; };
@@ -36,6 +34,7 @@
 		26ABAC1B1ECC229E0023DF97 /* MoDaoNavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC131ECC229E0023DF97 /* MoDaoNavgationViewController.swift */; };
 		26ABAC1C1ECC229E0023DF97 /* MoDaoHomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC151ECC229E0023DF97 /* MoDaoHomeListViewController.swift */; };
 		26ABAC1D1ECC229E0023DF97 /* MoDaoHomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC161ECC229E0023DF97 /* MoDaoHomePageController.swift */; };
+		26ABAC231ECC36FE0023DF97 /* PDKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC221ECC36FE0023DF97 /* PDKeyChain.m */; };
 		75189A8D3218F8A7A4CD65FF /* Pods_LakhAdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,10 +77,6 @@
 		26ABABE21ECC22890023DF97 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		26ABABE31ECC22890023DF97 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		26ABABE51ECC22890023DF97 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
-		26ABABE61ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYIMOsingleSelectCellOneCell.h; sourceTree = "<group>"; };
-		26ABABE71ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYIMOsingleSelectCellOneCell.m; sourceTree = "<group>"; };
-		26ABABE81ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYIMOWBsingleSelectOneCell.h; sourceTree = "<group>"; };
-		26ABABE91ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYIMOWBsingleSelectOneCell.m; sourceTree = "<group>"; };
 		26ABABEA1ECC22890023DF97 /* swiftTotalPch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftTotalPch.swift; sourceTree = "<group>"; };
 		26ABABEB1ECC22890023DF97 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		26ABABEF1ECC22890023DF97 /* MoDao-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MoDao-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -98,6 +93,9 @@
 		26ABAC131ECC229E0023DF97 /* MoDaoNavgationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoNavgationViewController.swift; sourceTree = "<group>"; };
 		26ABAC151ECC229E0023DF97 /* MoDaoHomeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoHomeListViewController.swift; sourceTree = "<group>"; };
 		26ABAC161ECC229E0023DF97 /* MoDaoHomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoDaoHomePageController.swift; sourceTree = "<group>"; };
+		26ABAC211ECC36FE0023DF97 /* PDKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeyChain.h; sourceTree = "<group>"; };
+		26ABAC221ECC36FE0023DF97 /* PDKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeyChain.m; sourceTree = "<group>"; };
+		26ABAC241ECC37A40023DF97 /* LakhAdd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LakhAdd.entitlements; sourceTree = "<group>"; };
 		9570D66D579A2C37FE3F4D95 /* Pods-LakhAdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.debug.xcconfig"; sourceTree = "<group>"; };
 		E52B575564E9CE1AE59C3B0C /* Pods-LakhAdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +151,7 @@
 		26ABABA21ECC20990023DF97 /* LakhAdd */ = {
 			isa = PBXGroup;
 			children = (
+				26ABAC241ECC37A40023DF97 /* LakhAdd.entitlements */,
 				26ABAC0B1ECC229E0023DF97 /* Controllers */,
 				26ABAC0D1ECC229E0023DF97 /* FaJI(发籍) */,
 				26ABAC0F1ECC229E0023DF97 /* FaXian(发现) */,
@@ -195,6 +194,7 @@
 		26ABABD91ECC22890023DF97 /* Login(登录) */ = {
 			isa = PBXGroup;
 			children = (
+				26ABAC201ECC36FE0023DF97 /* loginUserTool */,
 				26ABABDA1ECC22890023DF97 /* MoDaoLoginController.swift */,
 				26ABABDB1ECC22890023DF97 /* MoDaoLoginController.xib */,
 			);
@@ -243,10 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				26ABABE51ECC22890023DF97 /* Bundle+Extension.swift */,
-				26ABABE61ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.h */,
-				26ABABE71ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m */,
-				26ABABE81ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.h */,
-				26ABABE91ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m */,
 				26ABABEA1ECC22890023DF97 /* swiftTotalPch.swift */,
 				26ABABEB1ECC22890023DF97 /* UIColor-Extension.swift */,
 			);
@@ -344,6 +340,15 @@
 			path = "HomePage(首页)";
 			sourceTree = "<group>";
 		};
+		26ABAC201ECC36FE0023DF97 /* loginUserTool */ = {
+			isa = PBXGroup;
+			children = (
+				26ABAC211ECC36FE0023DF97 /* PDKeyChain.h */,
+				26ABAC221ECC36FE0023DF97 /* PDKeyChain.m */,
+			);
+			path = loginUserTool;
+			sourceTree = "<group>";
+		};
 		D2AEFAC03FAF7CCD8DBD0859 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +439,11 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = BPTZ8B7HX9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					26ABABB31ECC20990023DF97 = {
 						CreatedOnToolsVersion = 8.3;
@@ -551,12 +561,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26ABAC191ECC229E0023DF97 /* MoDaoFindController.swift in Sources */,
-				26ABAC001ECC22890023DF97 /* LYIMOsingleSelectCellOneCell.m in Sources */,
 				26ABAC031ECC22890023DF97 /* UIColor-Extension.swift in Sources */,
 				26ABAC061ECC22890023DF97 /* HYContentView.swift in Sources */,
 				26ABAC081ECC22890023DF97 /* HYPageView.swift in Sources */,
 				26ABABFE1ECC22890023DF97 /* UIButton+Extension.m in Sources */,
 				26ABAC1C1ECC229E0023DF97 /* MoDaoHomeListViewController.swift in Sources */,
+				26ABAC231ECC36FE0023DF97 /* PDKeyChain.m in Sources */,
 				26ABAC181ECC229E0023DF97 /* MoDaoFaJiController.swift in Sources */,
 				26ABAC0A1ECC22890023DF97 /* MoDaoWeiKanController.swift in Sources */,
 				26ABAC1B1ECC229E0023DF97 /* MoDaoNavgationViewController.swift in Sources */,
@@ -571,7 +581,6 @@
 				26ABAC071ECC22890023DF97 /* HYPageStyle.swift in Sources */,
 				26ABABFB1ECC22890023DF97 /* MoDaoLoginController.swift in Sources */,
 				26ABABA61ECC20990023DF97 /* ViewController.swift in Sources */,
-				26ABAC011ECC22890023DF97 /* LYIMOWBsingleSelectOneCell.m in Sources */,
 				26ABABA41ECC20990023DF97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -725,6 +734,7 @@
 			baseConfigurationReference = 9570D66D579A2C37FE3F4D95 /* Pods-LakhAdd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LakhAdd/LakhAdd.entitlements;
 				DEVELOPMENT_TEAM = BPTZ8B7HX9;
 				INFOPLIST_FILE = LakhAdd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -739,6 +749,7 @@
 			baseConfigurationReference = E52B575564E9CE1AE59C3B0C /* Pods-LakhAdd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LakhAdd/LakhAdd.entitlements;
 				DEVELOPMENT_TEAM = BPTZ8B7HX9;
 				INFOPLIST_FILE = LakhAdd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

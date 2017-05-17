@@ -35,6 +35,9 @@ class MoDaoLoginController: UIViewController {
     //登录
     @IBAction func loginAction(_ sender: Any) {
         
+      let  deleagter = UIApplication.shared.delegate;
+       deleagter?.window??.rootViewController = MoDaoTabbarController()
+
         
     }
     
