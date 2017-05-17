@@ -25,10 +25,13 @@ class LakhRegisterController: UIViewController {
   
 
 
-    /// <#Description#>
-    ///
+  
     /// - Parameter sender: 发送验证码
     @IBAction func sendAutoCode(_ sender: Any) {
+        
+      
+        
+        
     }
     
     //密码明文
@@ -40,3 +43,18 @@ class LakhRegisterController: UIViewController {
     
 
 }
+
+
+extension UIViewController{
+
+
+    
+    
+    
+
+
+
+
+
+}
+

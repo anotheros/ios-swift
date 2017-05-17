@@ -15,6 +15,7 @@ class HYPageStyle {
     
     // Label的一些属性
     var titleHeight : CGFloat = 48
+    
     var normalColor : UIColor = UIColor.init(r: 124, g: 124, b: 124)
     var selectColor : UIColor = UIColor.init(r: 79, g: 121, b: 150)
     var fontSize : CGFloat = 17
