@@ -29,7 +29,13 @@ class LakhRegisterController: UIViewController {
     /// - Parameter sender: 发送验证码
     @IBAction func sendAutoCode(_ sender: Any) {
         
+     
+     //1 验证是否为邮箱
       
+      SVProgressHUDLakh.showInfo("请输入正确的邮箱格式!")
+        
+     //2 发送验证码
+        
         
         
     }

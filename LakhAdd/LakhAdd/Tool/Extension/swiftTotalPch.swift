@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import SVProgressHUD
 
 //屏幕的宽
 let kScreenWidth = UIScreen.main.bounds.size.width
@@ -33,3 +33,28 @@ class kNSLog {
     }
 }
 
+
+
+
+class SVProgressHUDLakh {
+
+
+    //设置模式
+    class func setDefaultStyle(_ style: SVProgressHUDStyle){
+        SVProgressHUD.setDefaultStyle(style)
+    
+    }
+
+
+    //显示信息
+    class func showInfo(_ withStatus: String!){
+        SVProgressHUD.showInfo(withStatus: withStatus)
+        
+    }
+    
+
+
+
+
+
+}

@@ -39,6 +39,7 @@
 		26ABAC311ECC47BC0023DF97 /* LakhForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */; };
 		26ABAC3A1ECC501B0023DF97 /* LakhRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC381ECC501B0023DF97 /* LakhRegisterController.swift */; };
 		26ABAC3B1ECC501B0023DF97 /* LakhRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26ABAC391ECC501B0023DF97 /* LakhRegisterController.xib */; };
+		26ABAC3F1ECC67B00023DF97 /* LYIMOHRTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 26ABAC3E1ECC67B00023DF97 /* LYIMOHRTools.m */; };
 		75189A8D3218F8A7A4CD65FF /* Pods_LakhAdd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,8 @@
 		26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LakhForgetPasswordController.xib; sourceTree = "<group>"; };
 		26ABAC381ECC501B0023DF97 /* LakhRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakhRegisterController.swift; sourceTree = "<group>"; };
 		26ABAC391ECC501B0023DF97 /* LakhRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LakhRegisterController.xib; sourceTree = "<group>"; };
+		26ABAC3D1ECC67B00023DF97 /* LYIMOHRTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYIMOHRTools.h; sourceTree = "<group>"; };
+		26ABAC3E1ECC67B00023DF97 /* LYIMOHRTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYIMOHRTools.m; sourceTree = "<group>"; };
 		9570D66D579A2C37FE3F4D95 /* Pods-LakhAdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.debug.xcconfig"; sourceTree = "<group>"; };
 		E52B575564E9CE1AE59C3B0C /* Pods-LakhAdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LakhAdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-LakhAdd/Pods-LakhAdd.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +234,7 @@
 		26ABABDF1ECC22890023DF97 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				26ABAC3C1ECC67A50023DF97 /* regular */,
 				26ABABE01ECC22890023DF97 /* Additions */,
 				26ABABE41ECC22890023DF97 /* Extension */,
 				26ABABEC1ECC22890023DF97 /* http */,
@@ -359,6 +363,15 @@
 				26ABAC221ECC36FE0023DF97 /* PDKeyChain.m */,
 			);
 			path = loginUserTool;
+			sourceTree = "<group>";
+		};
+		26ABAC3C1ECC67A50023DF97 /* regular */ = {
+			isa = PBXGroup;
+			children = (
+				26ABAC3D1ECC67B00023DF97 /* LYIMOHRTools.h */,
+				26ABAC3E1ECC67B00023DF97 /* LYIMOHRTools.m */,
+			);
+			path = regular;
 			sourceTree = "<group>";
 		};
 		D2AEFAC03FAF7CCD8DBD0859 /* Frameworks */ = {
@@ -582,6 +595,7 @@
 				26ABAC081ECC22890023DF97 /* HYPageView.swift in Sources */,
 				26ABABFE1ECC22890023DF97 /* UIButton+Extension.m in Sources */,
 				26ABAC1C1ECC229E0023DF97 /* MoDaoHomeListViewController.swift in Sources */,
+				26ABAC3F1ECC67B00023DF97 /* LYIMOHRTools.m in Sources */,
 				26ABAC231ECC36FE0023DF97 /* PDKeyChain.m in Sources */,
 				26ABAC181ECC229E0023DF97 /* MoDaoFaJiController.swift in Sources */,
 				26ABAC0A1ECC22890023DF97 /* MoDaoWeiKanController.swift in Sources */,
@@ -757,6 +771,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lakhAdd.LakhAdd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Tool/http/MoDao-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -772,6 +787,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lakhAdd.LakhAdd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Tool/http/MoDao-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
