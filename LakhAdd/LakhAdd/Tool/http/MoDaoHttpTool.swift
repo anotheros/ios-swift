@@ -80,18 +80,26 @@ public enum ParameterEncoding {
         
         Alamofire.request(URLString, method: method, parameters:parameters, encoding: JSONEncoding.default ,headers: headers  ).responseJSON { (response) in
             
-            // 3.获取结果
-            guard let result = response.result.value else {
-                print(response.result.error!)
-                return
+
+            guard ((response.response?.statusCode) != nil ) else {
+ 
+                 finishedCallback(false)
+                 return
             }
             
-            // 4.将结果回调出去
-            finishedCallback(result)
+            guard ((response.response?.statusCode) == 200 ) else {
+                
+                finishedCallback(false)
+                return
+            }
+             finishedCallback(true)
+
+            
         }
         
        
 
+      
         
         
         

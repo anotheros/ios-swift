@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
@@ -36,17 +41,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSCameraUsageDescription</key>
-    <string>需要您的同意才能使用相机</string>
-    <key>NSContactsUsageDescription</key>
-    <string>contactsDesciption</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>允许开启,才能记录您的轨迹</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>允许开启定位功能，才能正常使用百度地图。</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>需要您的同意才能使用麦克风</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>需要您的同意才能读取媒体资料库</string>
+	<key>NSCameraUsageDescription</key>
+	<string>需要您的同意才能使用相机</string>
+	<key>NSContactsUsageDescription</key>
+	<string>contactsDesciption</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>允许开启,才能记录您的轨迹</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>允许开启定位功能，才能正常使用百度地图。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>需要您的同意才能使用麦克风</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要您的同意才能读取媒体资料库</string>
 </dict>
 </plist>

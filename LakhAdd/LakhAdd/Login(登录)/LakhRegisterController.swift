@@ -31,12 +31,29 @@ class LakhRegisterController: UIViewController {
         
      
      //1 验证是否为邮箱
-      
-      SVProgressHUDLakh.showInfo("请输入正确的邮箱格式!")
+        guard (emailTextField.text != nil && emailTextField.text != "") else {
+             SVProgressHUDLakh.showInfo("请输入邮箱!")
+            return;
+        }
+        guard LYIMOHRTools.verifyEmailAddress(emailTextField.text) else {
+            
+            SVProgressHUDLakh.showInfo("请输入正确的邮箱格式!")
+            return;
+        }
         
      //2 发送验证码
         
+        LakhHttpTool.getEmailCode(emailTextField.text!) { (resultSuccess) in
+            
+            guard resultSuccess else {
+                SVProgressHUDLakh.showInfo("发送验证码失败!")
+                return
+            }
+            SVProgressHUDLakh.showInfo("发送验证码成功,请到邮箱查看!")
+            
+        }
         
+       
         
     }
     

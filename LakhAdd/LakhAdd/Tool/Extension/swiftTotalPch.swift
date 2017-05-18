@@ -53,8 +53,52 @@ class SVProgressHUDLakh {
     }
     
 
+    //显示进度条
+    class func showProgress(_ progress: Float){
+    
+        SVProgressHUD.showProgress(progress)
+    
+    }
+     //显示进度条带信息
+    class func showProgress1(_ progress: Float, _ status: String!){
+        
+        SVProgressHUD.showProgress(progress, status: status)
+        
+    }
+    
 
 
+    
+    //显示
+    class func show(){
+        
+        SVProgressHUD.show()
+        
+    }
+    
+    //显示带信息
+    class func show(withStatus :String!){
 
+        SVProgressHUD.show(withStatus: withStatus)
+        
+    }
+    
+    //隐藏HUD
+    class func dismiss(){
+        
+        SVProgressHUD.dismiss()
+        
+    }
+    
+    
+    //隐藏加延时
+    class func dismiss(_ withDelay: TimeInterval){
+        
+        SVProgressHUD.dismiss(withDelay: withDelay)
+        
+    }
+    
+    
+    
 
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2638B76E1ECD347200A993F0 /* LakhHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638B76D1ECD347200A993F0 /* LakhHttpTool.swift */; };
 		26ABABA41ECC20990023DF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABA31ECC20990023DF97 /* AppDelegate.swift */; };
 		26ABABA61ECC20990023DF97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABA51ECC20990023DF97 /* ViewController.swift */; };
 		26ABABA91ECC20990023DF97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26ABABA71ECC20990023DF97 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LakhAdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2638B76D1ECD347200A993F0 /* LakhHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakhHttpTool.swift; sourceTree = "<group>"; };
 		26ABABA01ECC20990023DF97 /* LakhAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LakhAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26ABABA31ECC20990023DF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26ABABA51ECC20990023DF97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				26ABAC2F1ECC47BC0023DF97 /* LakhForgetPasswordController.xib */,
 				26ABAC381ECC501B0023DF97 /* LakhRegisterController.swift */,
 				26ABAC391ECC501B0023DF97 /* LakhRegisterController.xib */,
+				2638B76D1ECD347200A993F0 /* LakhHttpTool.swift */,
 			);
 			path = "Login(登录)";
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 				26ABAC1C1ECC229E0023DF97 /* MoDaoHomeListViewController.swift in Sources */,
 				26ABAC3F1ECC67B00023DF97 /* LYIMOHRTools.m in Sources */,
 				26ABAC231ECC36FE0023DF97 /* PDKeyChain.m in Sources */,
+				2638B76E1ECD347200A993F0 /* LakhHttpTool.swift in Sources */,
 				26ABAC181ECC229E0023DF97 /* MoDaoFaJiController.swift in Sources */,
 				26ABAC0A1ECC22890023DF97 /* MoDaoWeiKanController.swift in Sources */,
 				26ABAC1B1ECC229E0023DF97 /* MoDaoNavgationViewController.swift in Sources */,
