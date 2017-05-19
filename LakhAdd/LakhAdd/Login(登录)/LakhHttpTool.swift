@@ -63,9 +63,27 @@ class LakhHttpTool {
             
             
         }
+    }
+    
         
-}
-
+        //登录
+        class  func LoginUserName(_ registerUserInfon : [String : Any],finishedBlock :   @escaping (_ registerResult : Any, _ Token : Any) -> (), failture : @escaping (_ error : Error)->()) {
+            
+            let url = "\(kUrl)/v2/authorization"
+            
+            NetworkTools.requestData(.POST, URLString: url, parameters: registerUserInfon, success: { (successBLock, tokenBlock) in
+                
+                finishedBlock(successBLock, tokenBlock)
+                
+                
+            }) { (errorMessage) in
+                
+                failture(errorMessage)
+                
+                
+            }
+        
+          }
 
 
 }

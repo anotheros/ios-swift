@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262D7BE11ECF0AAB00E3F92E /* LakhRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262D7BE01ECF0AAB00E3F92E /* LakhRegisterModel.swift */; };
+		262D7BE41ECF0E9800E3F92E /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262D7BE31ECF0E9800E3F92E /* NSDate-Extension.swift */; };
 		2638B76E1ECD347200A993F0 /* LakhHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638B76D1ECD347200A993F0 /* LakhHttpTool.swift */; };
 		26ABABA41ECC20990023DF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABA31ECC20990023DF97 /* AppDelegate.swift */; };
 		26ABABA61ECC20990023DF97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ABABA51ECC20990023DF97 /* ViewController.swift */; };
@@ -63,6 +65,9 @@
 
 /* Begin PBXFileReference section */
 		13DB510D665F7A64CA96C811 /* Pods_LakhAdd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LakhAdd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		262D7BE01ECF0AAB00E3F92E /* LakhRegisterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakhRegisterModel.swift; sourceTree = "<group>"; };
+		262D7BE31ECF0E9800E3F92E /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		262D7BE51ECF0ED400E3F92E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		2638B76D1ECD347200A993F0 /* LakhHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakhHttpTool.swift; sourceTree = "<group>"; };
 		26ABABA01ECC20990023DF97 /* LakhAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LakhAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26ABABA31ECC20990023DF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,9 +144,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		262D7BDF1ECF001C00E3F92E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				262D7BE01ECF0AAB00E3F92E /* LakhRegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		262D7BE21ECF0E9100E3F92E /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				262D7BE31ECF0E9800E3F92E /* NSDate-Extension.swift */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		26ABAB971ECC20990023DF97 = {
 			isa = PBXGroup;
 			children = (
+				262D7BE51ECF0ED400E3F92E /* MyPlayground.playground */,
 				26ABABA21ECC20990023DF97 /* LakhAdd */,
 				26ABABB71ECC20990023DF97 /* LakhAddTests */,
 				26ABABC21ECC20990023DF97 /* LakhAddUITests */,
@@ -207,6 +229,7 @@
 		26ABABD91ECC22890023DF97 /* Login(登录) */ = {
 			isa = PBXGroup;
 			children = (
+				262D7BDF1ECF001C00E3F92E /* Model */,
 				26ABAC201ECC36FE0023DF97 /* loginUserTool */,
 				26ABABDA1ECC22890023DF97 /* MoDaoLoginController.swift */,
 				26ABABDB1ECC22890023DF97 /* MoDaoLoginController.xib */,
@@ -237,6 +260,7 @@
 		26ABABDF1ECC22890023DF97 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				262D7BE21ECF0E9100E3F92E /* NSDate */,
 				26ABAC3C1ECC67A50023DF97 /* regular */,
 				26ABABE01ECC22890023DF97 /* Additions */,
 				26ABABE41ECC22890023DF97 /* Extension */,
@@ -601,8 +625,10 @@
 				26ABAC3F1ECC67B00023DF97 /* LYIMOHRTools.m in Sources */,
 				26ABAC231ECC36FE0023DF97 /* PDKeyChain.m in Sources */,
 				2638B76E1ECD347200A993F0 /* LakhHttpTool.swift in Sources */,
+				262D7BE41ECF0E9800E3F92E /* NSDate-Extension.swift in Sources */,
 				26ABAC181ECC229E0023DF97 /* MoDaoFaJiController.swift in Sources */,
 				26ABAC0A1ECC22890023DF97 /* MoDaoWeiKanController.swift in Sources */,
+				262D7BE11ECF0AAB00E3F92E /* LakhRegisterModel.swift in Sources */,
 				26ABAC1B1ECC229E0023DF97 /* MoDaoNavgationViewController.swift in Sources */,
 				26ABAC051ECC22890023DF97 /* MoDaoHttpTool.swift in Sources */,
 				26ABABFF1ECC22890023DF97 /* Bundle+Extension.swift in Sources */,

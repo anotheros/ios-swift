@@ -17,6 +17,6 @@ pod “SVProgressHUD”
 pod 'SDWebImage', '~>3.8'
 pod “YYModel”
 pod “FMDB”
-
+pod 'ObjectMapper'
 
 end

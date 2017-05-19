@@ -17,6 +17,11 @@ let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
 
 
+
+var LakhToken = ""
+
+
+
 //网络链接
 
 let kUrl = "https://api.100000p.com"

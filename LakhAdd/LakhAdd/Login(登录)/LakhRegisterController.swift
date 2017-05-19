@@ -114,19 +114,36 @@ class LakhRegisterController: UIViewController {
                                        "password":passwordTextField.text!], finishedBlock: { (successBlock, tokenBlock) in
                                         
             
+            //1 将successBlock 转成 字典
+                                        
+             guard successBlock is [String : NSObject] else {
+                
+                return
+            }
+                                        
+         let registerModel = LakhRegisterModel(dict: successBlock as! [String : Any])
                                         
                                         
+          print(registerModel)
                                         
+          
+                                        
+            guard successBlock is String else {
+                                            
+              return
+             }
+
+                                        
+          LakhToken = tokenBlock as! String
+                                        
+          print(LakhToken)
                                         
         }) { (errorMessage) in
-            
-            
-            
+
+            print(errorMessage)
             
         }
-        
-    
-  
+
 
     }
     

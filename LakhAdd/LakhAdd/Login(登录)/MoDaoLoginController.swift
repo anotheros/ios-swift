@@ -37,9 +37,69 @@ class MoDaoLoginController: UIViewController {
     //登录
     @IBAction func loginAction(_ sender: Any) {
         
-      let  deleagter = UIApplication.shared.delegate;
-       deleagter?.window??.rootViewController = MoDaoTabbarController()
+        
+        guard (emailName.text != nil && emailName.text != "") else {
+            SVProgressHUDLakh.showInfo("请输入邮箱!")
+            return;
+        }
+        guard LYIMOHRTools.verifyEmailAddress(emailName.text) else {
+            
+            SVProgressHUDLakh.showInfo("请输入正确的邮箱格式!")
+            return;
+        }
+        guard (passWord.text != nil && passWord.text != "") else {
+            SVProgressHUDLakh.showInfo("请输入密码!")
+            return;
+        }
+ 
+       //网络请求
+        LakhHttpTool.LoginUserName(["email":emailName.text!,
+                                    "password":passWord.text!
+                                    ], finishedBlock: { (successBlock, tokenBlock) in
+         
+                                        
+                                        //1 将successBlock 转成 字典
+                                        
+                                        guard successBlock is [String : NSObject] else {
+                                            
+                                            return
+                                        }
+                                        
+                                        let registerModel = LakhRegisterModel(dict: successBlock as! [String : Any])
+                                        
+                                        
+                                        print(registerModel)
+                                        
+                                        
+                                        
+                                        guard successBlock is String else {
+                                            
+                                            return
+                                        }
+                                        
+                                        
+                                        LakhToken = tokenBlock as! String
+                                        
+                                        print(LakhToken)
+                                        
+                                        
+                                        
+                                        let  deleagter = UIApplication.shared.delegate;
+                                        deleagter?.window??.rootViewController = MoDaoTabbarController()
+           
+                                        
+        }) { (errorMessage) in
+            
+            print(errorMessage)
 
+            
+        }
+        
+        
+        
+        
+        
+   
         
     }
     
