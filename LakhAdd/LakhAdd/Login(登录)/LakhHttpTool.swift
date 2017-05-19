@@ -47,22 +47,25 @@ class LakhHttpTool {
     //注册
     
     
-    class  func registerUserName(_ registerUserInfon : [String : Any],finishedBlock : @escaping (_ result : Int) -> ()) {
+    
+      class  func registerUserName(_ registerUserInfon : [String : Any],finishedBlock :   @escaping (_ registerResult : Any, _ Token : Any) -> (), failture : @escaping (_ error : Error)->()) {
+
+         let url = "\(kUrl)/v2/user"
         
-        
-        let url = "\(kUrl)/v2/user"
-        
-       
-        NetworkTools.requestData(.POST, URLString: url, parameters: registerUserInfon, success: { (successValue) in
+        NetworkTools.requestData(.POST, URLString: url, parameters: registerUserInfon, success: { (successBLock, tokenBlock) in
+            
+            finishedBlock(successBLock, tokenBlock)
             
             
-        }) {(failerValue) in
-        
+        }) { (errorMessage) in
+            
+            failture(errorMessage)
+            
             
         }
-    }
+        
+}
 
-    
-    
-    
+
+
 }

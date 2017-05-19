@@ -188,7 +188,7 @@ public enum ParameterEncoding {
     
     
     //注册
-    class func requestData(_ type : MethodType, URLString : String, parameters : [String : Any]? = nil, success :  @escaping (_ registerResult : Any) -> (), failture : @escaping (_ error : Error)->()) {
+    class func requestData(_ type : MethodType, URLString : String, parameters : [String : Any]? = nil, success :  @escaping (_ registerResult : Any, _ Token : Any) -> (), failture : @escaping (_ error : Error)->()) {
         
         // 1.获取类型
         var method : HTTPMethod
@@ -245,13 +245,13 @@ public enum ParameterEncoding {
             let dic = response.response?.allHeaderFields
     
             
-            print(dic?["Token"] ?? 222)
+            print(dic?["token"] ?? 222)
           
             switch response.result{
             case .success:
                 if let value = response.result.value as? [String: AnyObject] {
                     
-                    success(value)
+                    success(value,dic?["token"] ?? "222222" )
                     
                 }
             case .failure(let error):

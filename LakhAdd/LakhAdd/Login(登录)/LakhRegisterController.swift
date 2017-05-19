@@ -108,32 +108,37 @@ class LakhRegisterController: UIViewController {
         
         
         //注册账号
-        
-        
         LakhHttpTool.registerUserName(["code":authCodeTextField.text!,
-                                        "userName":userNameTextField.text!,
-                                        "email":emailTextField.text!,
-                                        "password":passwordTextField.text!]) { (response) in
-                                            
-                                            
+                                       "userName":userNameTextField.text!,
+                                       "email":emailTextField.text!,
+                                       "password":passwordTextField.text!], finishedBlock: { (successBlock, tokenBlock) in
+                                        
+            
+                                        
+                                        
+                                        
+                                        
+        }) { (errorMessage) in
+            
+            
+            
+            
         }
         
-        
+    
+  
+
     }
     
-
+    
 }
-
 
 extension UIViewController : UITextFieldDelegate{
 
 
     
     public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
-        
-        
 
-   
    //验证用户名
       LakhHttpTool.getUserCanUser(textField.text) { (codeResult) in
         
