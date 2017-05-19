@@ -26,6 +26,10 @@ public enum ParameterEncoding {
 
 
  class NetworkTools {
+    
+    
+    
+    //邮箱发验证码
       class func requestData(_ type : MethodType, URLString : String, parameters : [String : Any]? = nil, finishedCallback :  @escaping (_ result : Any) -> ()) {
         
         // 1.获取类型
@@ -68,16 +72,10 @@ public enum ParameterEncoding {
    
     
         }
-        
-        
-        
-        
         //请求头
         let headers = ["Accept": "application/json","Content-Type": "application/json","charset":"utf-8"]
         // 2.发送网络请求
-        
-       
-        
+
         Alamofire.request(URLString, method: method, parameters:parameters, encoding: JSONEncoding.default ,headers: headers  ).responseJSON { (response) in
             
 
@@ -92,17 +90,11 @@ public enum ParameterEncoding {
                 finishedCallback(false)
                 return
             }
-             finishedCallback(true)
-
             
+             finishedCallback(true)
+    
         }
-        
-       
 
-      
-        
-        
-        
         
         
     }
@@ -112,12 +104,171 @@ public enum ParameterEncoding {
     
     
     
-    
-    
-    
-    
+    //邮箱发验证码
+    class func requestData(_ type : MethodType, URLString : String, parameters : [String : Any]? = nil, headCallback :  @escaping (_ headResult : Any) -> ()) {
+        
+        // 1.获取类型
+        var method : HTTPMethod
+        
+        switch type {
+        case .OPTIONS:
+            
+            method = HTTPMethod.options
+        case .GET:
+            
+            method = HTTPMethod.get
+        case .HEAD:
+            
+            method = HTTPMethod.head
+            
+        case .POST:
+            
+            method = HTTPMethod.post
+            
+        case .PUT:
+            
+            method = HTTPMethod.put
+            
+        case .PATCH:
+            
+            method = HTTPMethod.patch
+            
+        case .DELETE:
+            
+            method = HTTPMethod.delete
+            
+        case .TRACE:
+            
+            method = HTTPMethod.trace
+            
+        case .CONNECT:
+            
+            method = HTTPMethod.connect
+            
+            
+        }
+        //请求头
+        let headers = ["Accept": "application/json","Content-Type": "application/json","charset":"utf-8"]
+        // 2.发送网络请求
+        
+   
+        // utf-8怎么转
+        
+        
+        Alamofire.request(URLString, method: method, parameters:parameters, encoding: JSONEncoding.default ,headers: headers  ).responseJSON { (response) in
+            
+            print(response)
+            guard ((response.response?.statusCode) != nil ) else {
+                
+                headCallback(500)
+                return
+            }
+            
+            switch response.response!.statusCode {
+            case 200:
+                headCallback(200)
+                break
+                
+            case 409:
+                headCallback(409)
+                break
+                
+            default:
+                headCallback(500)
+                break
 
-}
+            }
+
+            
+        }
+        
+        
+    }
+    
+    
+    
+    //注册
+    class func requestData(_ type : MethodType, URLString : String, parameters : [String : Any]? = nil, success :  @escaping (_ registerResult : Any) -> (), failture : @escaping (_ error : Error)->()) {
+        
+        // 1.获取类型
+        var method : HTTPMethod
+        
+        switch type {
+        case .OPTIONS:
+            
+            method = HTTPMethod.options
+        case .GET:
+            
+            method = HTTPMethod.get
+        case .HEAD:
+            
+            method = HTTPMethod.head
+            
+        case .POST:
+            
+            method = HTTPMethod.post
+            
+        case .PUT:
+            
+            method = HTTPMethod.put
+            
+        case .PATCH:
+            
+            method = HTTPMethod.patch
+            
+        case .DELETE:
+            
+            method = HTTPMethod.delete
+            
+        case .TRACE:
+            
+            method = HTTPMethod.trace
+            
+        case .CONNECT:
+            
+            method = HTTPMethod.connect
+            
+            
+        }
+        //请求头
+        let headers = ["Accept": "application/json","Content-Type": "application/json","charset":"utf-8"]
+        // 2.发送网络请求
+        
+        
+       
+        
+        
+        Alamofire.request(URLString, method: method, parameters:parameters, encoding: JSONEncoding.default ,headers: headers  ).responseJSON { (response) in
+            
+            
+            
+            let dic = response.response?.allHeaderFields
+    
+            
+            print(dic?["Token"] ?? 222)
+          
+            switch response.result{
+            case .success:
+                if let value = response.result.value as? [String: AnyObject] {
+                    
+                    success(value)
+                    
+                }
+            case .failure(let error):
+               
+                failture(error)
+                
+            }
+            
+            
+            
+        }
+            
+    }
+    
+    }
+    
+    
 
 
 

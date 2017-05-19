@@ -25,10 +25,10 @@ class LakhForgetPasswordController: UIViewController {
 
     
     //发送验证
-    @IBAction func sendAuthCode(_ sender: Any) {
+    @IBAction func sendAuthCode(_ sender: UIButton) {
         
-        
-        
+ 
+        sender.isSelected = !sender.isSelected
         
     }
     

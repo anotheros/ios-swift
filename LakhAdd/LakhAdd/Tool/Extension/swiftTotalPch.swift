@@ -21,7 +21,7 @@ let kScreenHeight = UIScreen.main.bounds.size.height
 
 let kUrl = "https://api.100000p.com"
 
-class kNSLog {
+class kPrint {
     
   class  func Print(_ message : Any){
         #if DEBUG

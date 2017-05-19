@@ -20,6 +20,9 @@ class LakhRegisterController: UIViewController {
         super.viewDidLoad()
 
         self.title = "注册账号"
+        
+        userNameTextField.delegate = self
+        passwordTextField.isSecureTextEntry = true
     }
 
   
@@ -58,21 +61,102 @@ class LakhRegisterController: UIViewController {
     }
     
     //密码明文
-    @IBAction func mingWenAction(_ sender: Any) {
+    @IBAction func mingWenAction(_ sender: UIButton) {
+        
+       
+        sender.isSelected = !sender.isSelected
+        
+        if sender.isSelected {
+             passwordTextField.isSecureTextEntry = false
+        }
+        else{
+         passwordTextField.isSecureTextEntry = true
+        
+        }
+        
     }
     //注册button
-    @IBAction func registerButton(_ sender: Any) {
+    @IBAction func registerButton(_ sender: UIButton) {
+        
+        guard (emailTextField.text != nil && emailTextField.text != "") else {
+            SVProgressHUDLakh.showInfo("请输入邮箱!")
+            return;
+        }
+        guard LYIMOHRTools.verifyEmailAddress(emailTextField.text) else {
+            
+            SVProgressHUDLakh.showInfo("请输入正确的邮箱格式!")
+            return;
+        }
+
+        guard (userNameTextField.text != nil && userNameTextField.text != "") else {
+            
+            SVProgressHUDLakh.showInfo("请输入用户名!")
+            return;
+        }
+        
+        guard (authCodeTextField.text != nil && authCodeTextField.text != "") else {
+            
+            SVProgressHUDLakh.showInfo("请输入验证码!")
+            return;
+        }
+        
+        guard (passwordTextField.text != nil && passwordTextField.text != "") else {
+            
+            SVProgressHUDLakh.showInfo("请输入密码!")
+            return;
+        }
+        
+        
+        //注册账号
+        
+        
+        LakhHttpTool.registerUserName(["code":authCodeTextField.text!,
+                                        "userName":userNameTextField.text!,
+                                        "email":emailTextField.text!,
+                                        "password":passwordTextField.text!]) { (response) in
+                                            
+                                            
+        }
+        
+        
     }
     
 
 }
 
 
-extension UIViewController{
+extension UIViewController : UITextFieldDelegate{
 
 
     
-    
+    public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        
+        
+
+   
+   //验证用户名
+      LakhHttpTool.getUserCanUser(textField.text) { (codeResult) in
+        
+        switch codeResult {
+        case 200:
+          SVProgressHUDLakh.showInfo("用户名可用!")
+            break
+        case 409:
+            
+        SVProgressHUDLakh.showInfo("用户名不可用!")
+            break
+        case 500:
+            
+            SVProgressHUDLakh.showInfo("接口调用异常!")
+            break
+        default:
+            
+            break
+        }
+ 
+        }
+  
+    }
     
 
 

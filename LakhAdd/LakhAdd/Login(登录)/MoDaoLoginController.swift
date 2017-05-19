@@ -28,9 +28,10 @@ class MoDaoLoginController: UIViewController {
     }
 
     //明文展示密码
-    @IBAction func showPasswordChange(_ sender: Any) {
+    @IBAction func showPasswordChange(_ sender: UIButton) {
         
         
+        sender.isSelected = !sender.isSelected
     }
 
     //登录
